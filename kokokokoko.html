@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>TUGAS AKHIR PWEB 2019</title>
+</head>
+<style>
+    #jam-digital{overflow:hidden; width:350px}
+    #hours{float:left; width:100px; height:50px; background-color:#6B9AB8; margin-right:25px}
+    #minute{float:left; width:100px; height:50px; background-color:#A5B1CB}
+    #second{float:right; width:100px; height:50px; background-color:#FF618A; margin-left:25px}
+    #jam-digital p{color:#FFF; font-size:36px; text-align:center; margin-top:4px}
+</style>
+<script type="text/javascript" src="javascpit.js"></script>
+<body class="menu" onLoad="waktu()">
+    
+	<link rel="stylesheet" type="text/css" href="tttt.css">
+	<script type="text/javascript" src="waktu.js" ></script>
+	<center>
+<h1> TUGAS AKHIR PEMEROGRAMAN WEB </h1>
+<h2> HALAMAN WEB PRIBADI</h2>
+</center>
+<ul>
+<a >MENU</a>
+
+<div>
+<li><a href="bbbb.php">BIODATA</a></li>
+<li><a href="https://www.facebook.com/">facabook</a></li>
+<li><a href="https://www.instagram.com/?hl=id">instagram</a></li>
+</ul>
+<form method="post" name="formcari" class="cari" onSubmit="cari()">
+    <left>Cari Google:</left> 
+<input name="keyword" size="20 px" type="text">
+<input type="submit" value="Cari">
+<br>
+</div>
+</form>
+
+
+<h2>Pesan untuk Kami</h2>
+
+<form method="post" action="pesan.php">
+<div>
+<input type="text" name="nama" placeholder="Nama Anda" >
+</div><br>
+<div>
+<input type="text" name="email" placeholder="Masukkan Email Anda" >
+</div><br>
+<div>
+<input type="text" name="subject" placeholder="Subjek" >
+</div><br>
+<div>
+<textarea type="text" name="pesan" rows="10" cols="30" placeholder="Pesan"></textarea>
+</div><br>
+<div>
+<input type="submit" value="Kirim Sekarang" >
+</form>
+
+<br>
+<br>
+<form>
+<div>
+<input type="submit" value="Klik untuk tampilkan JS" onclick="Klik()">
+</div>
+</form>
+
+</div>
+<br>
+<br>
+<div id="jam-digital">
+        <div id="hours"><p id="jam"></p></div>
+        <div id="minute"><p id="menit"></p></div>
+        <div id="second"><p id="detik"></p></div>
+    </div>
+</body>
+</html>
